@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert to Uppercase</title>
+</head>
+<body>
+    <h1>Convert Text to Uppercase</h1>
+    <form method="post" action="/touppercase">
+        <label for="input_text">Enter text:</label>
+        <input type="text" name="input_text" id="input_text" required>
+        <button type="submit">Convert to Uppercase</button>
+    </form>
+    
+    {% if uppercased_text %}
+    <p>Converted Result:</p>
+    <p>{{ uppercased_text }}</p>
+    {% endif %}
+</body>
+</html>

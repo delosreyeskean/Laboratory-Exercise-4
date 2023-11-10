@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: #FFD3E0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #E0518A;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0080FF;
+        }
+
+        ul.works-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.works-list li {
+            margin: 10px 0;
+        }
+
+        ul.works-list a {
+            text-decoration: none;
+            color: #0080FF;
+            font-weight: bold;
+        }
+
+        p {
+            color: #E0518A;
+        }
+
+        .container {
+            text-align: center;
+        }
+        
+        /* Style for buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            color: #FFFFFF;
+            background-color: #0080FF;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Style for links within buttons */
+        .btn a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my page ! ★</h1>
+
+        <nav>
+            <ul>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>Welcome to my programming works</h1>
+        
+        <!-- Button for Convert to Uppercase -->
+        <form method="post" action="/touppercase">
+            <button class="btn" type="submit"><a href="/touppercase">Convert to Uppercase</a></button>
+        </form>
+        
+        <!-- Button for Calculate Area of Circle -->
+        <form method="post" action="/areaofcircle">
+            <button class="btn" type="submit"><a href="/areaofcircle">Calculate Area of Circle</a></button>
+        </form>
+        
+        <!-- Button for Calculate Area of Triangle -->
+        <form method="post" action="/areaoftriangle">
+            <button class="btn" type="submit"><a href="/areaoftriangle">Calculate Area of Triangle</a></button>
+        </form>
+    </div>
+</body>
+</html>
